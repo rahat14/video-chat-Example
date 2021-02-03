@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_login_activity"
+    style="@style/MatchParent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/MatchWidth"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:typeface="sans"
+            android:text="Please Enter Your Details " />
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/user_login"
+            style="@style/MatchWidth"
+            android:hint="Name "
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_full_name"
+            style="@style/MatchWidth"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_user_full_name"
+            android:paddingTop="@dimen/padding_top"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signInButton"
+            android:background="#03A9F4"
+            android:text="Start Chat"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
